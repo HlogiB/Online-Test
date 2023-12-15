@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Index.css">
+    <title>Online Test Application</title>
+</head>
+<body>
+    <h1>Welcome To The Devaire Java Online Test</h1>
+    
+     <div id="learner-info-section">
+        <label for="candidateName">Name:</label>
+        <input type="text" id="candidateName" placeholder="Enter your name">
+
+        <label for="studentNumber">Student Number:</label>
+        <input type="text" id="studentNumber" placeholder="Enter your student number">       
+    </div>
+    
+    <!-- Quiz Section -->
+    <div id="quiz-section">
+        <h2>Quiz Section</h2>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="quiz-container"></div>
+    </div>
+
+    <!-- Review and Result Section -->
+      <div id="review-section" style="display:none;">
+        <h2>Review and Display Result</h2>
+        
+        <!-- Display Total Score Section -->
+        <div id="total-score-section"></div>
+
+        <button onclick="reviewAndDisplayResult()">Review and Display Result</button>
+        <div id="result-container"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
